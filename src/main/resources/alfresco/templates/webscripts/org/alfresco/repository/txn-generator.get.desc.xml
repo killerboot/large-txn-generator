@@ -1,0 +1,9 @@
+<webscript>
+    <shortname>Generate large txn</shortname>
+    <description>Testing tool to generate a large single transaction, triggered by a webscript call.</description>
+    <format default="json">argument</format>
+    <url>/api/txn-generate?numDocs={numDocs?}</url>
+    <authentication>admin</authentication>
+    <transaction allow="readwrite">required</transaction>
+    <lifecycle>internal</lifecycle>
+</webscript>
